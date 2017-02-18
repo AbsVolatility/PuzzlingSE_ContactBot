@@ -164,7 +164,7 @@ class Chatbot:
         self.letters += ' ' + letter.upper()
         self.room.send_message("{} defending **{}**".format(self.defender.name, self.letters))
     
-    def reset(self
+    def reset(self):
         self.active = False
         self.room.send_message("Resetting...")
         for clue in self.clues.values():
